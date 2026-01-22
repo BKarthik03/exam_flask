@@ -33,7 +33,7 @@ pipeline
 			{
 				script
 				{
-					docker.withRegistry('https://index.docker.io/v1','dockerfile')
+					docker.withRegistry('https://index.docker.io/v1','dockerhub')
 					{
 						dockerImage.push()
 					}
